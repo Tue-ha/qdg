@@ -16,3 +16,7 @@ int main() {
     else {
         double y=x*11000;
         cout<<"Tiền taxi: "<<y<<endl;
+    }
+
+    return 0;
+}
