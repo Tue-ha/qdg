@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double x, y;
+    char z;
+    cout<<"Nhập số thứ nhất: ";
+    cin>> x;
+    cout<<"Nhập số thứ hai: ";
+    cin>> y;
+    cout<<"Nhập toán tử trong(+,-,*,/): ";
+    cin>> z;
+    switch (z) {
+        case '+':
+          cout<<"Phép tính: "<<x+y<<endl;
+          break;
+        case '-':
+          cout<<"Phép tính: "<<x-y<<endl;
+          break;
+        case '*':
+          cout<<"Phép tính: "<<x*y<<endl;
+          break;
+        case '/':
+          if (y!=0) {
+              cout<<"Phép tính: "<<x/y<<endl;
+          } else {
+              cout<<"Không thể thực hiện phép tính. "<<endl;
+          }
+          break;
+        default:
+          cout<<"Không hợp lệ. "<<endl;
+    }
+
+    return 0;
+}
