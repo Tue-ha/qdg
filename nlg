@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    cout<<"Nhập số giờ làm: ";
+    cin>> x;
+    if (x<=40) {
+        int y=50000*x;
+        cout<<"Lương: "<<y<<endl;
+    } else {
+        int y=(50000*40)+((x-40)*75000);
+        cout<<"Lương: "<<y<<endl;
+    }
+
+    return 0;
+}
